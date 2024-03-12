@@ -1,11 +1,77 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
-    
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Adventure Time Zodiac</title>
+    <link rel="stylesheet" href="css/normalize.css" />
+    <link rel="stylesheet" href="css/screen.css" />
+  </head>
+  <body>
+    <main>
+      <div>
+        <h1>Welcome to the Land of Ooo!</h1>
+      </div>
+      <div class="zodiac-description">
+        <button class="exit-description">Exit</button>
+        <p id="zodiacInput"></p>
+      </div>
+      <div class="zodiac-input">
+        <h2>Who is your Adventure Time character zodiac?</h2>
+        <input type="date" id="date-selection" />
+        <button id="find-out-now">Find Out Now!</button>
+      </div>
+      <div class="zodiac-choice">
+        <button id="tree-trunks">
+          <img src="images/gemini.png" alt="Tree Trunks" />
+        </button>
+        <button id="lady-rainicorn">
+          <img src="images/libra.png" alt="Lady Rainicorn" />
+        </button>
+        <button id="princess-bubblegum">
+          <img src="images/capricorn.png" alt="Princess Bubblegum" />
+        </button>
+        <button id="peppermint-butler">
+          <img src="images/pisces.png" alt="Peppermint Butler" />
+        </button>
+        <button id="ice-king">
+          <img src="images/cancer.png" alt="Ice King" />
+        </button>
+        <button id="lemongrab">
+          <img src="images/scorpio.png" alt="Lemongrab" />
+        </button>
+        <button id="flame-princess">
+          <img src="images/aries.png" alt="Flame Princess" />
+        </button>
+        <button id="lumpy-space-princess">
+          <img src="images/leo.png" alt="Lumpy Space Princess" />
+        </button>
+        <button id="finn">
+          <img src="images/saggittarius.png" alt="Finn" />
+        </button>
+        <button id="bmo"><img src="images/aquarius.png" alt="BMO" /></button>
+        <button id="jake"><img src="images/taurus.png" alt="Jake" /></button>
+        <button id="marceline">
+          <img src="images/virgo.png" alt="Marceline" />
+        </button>
+      </div>
+      <div class="help-instructions">
+        <button id="help-button">?</button>
+        <dialog class="instructions">
+          <p>
+            <b>Discover your Adventure Time zodiac twin!</b> <br />
+            Enter your birthday and see which character shares your star sign.
+            <br />
+            <br />
+            Curious to know the the zodiac signs of all your favorite Adventure
+            Time characters? Simply click their images to uncover the secrets of
+            Ooo!
+          </p>
+          <button class="exit-instructions" autofocus>Exit</button>
+        </dialog>
+      </div>
+      <audio id="audio-sound"></audio>
+      <script src="js/script.js"></script>
+    </main>
+  </body>
 </html>
